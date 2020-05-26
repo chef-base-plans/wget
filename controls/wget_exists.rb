@@ -1,4 +1,4 @@
-wget_path = attribute('wget_path', default: '/bin/wget')
+wget_path = input('wget_path', value: '/bin/wget')
 
 describe file(wget_path) do
   it { should exist }

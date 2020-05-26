@@ -1,2 +1,0 @@
-wget_path: '/bin/wget'
-wget_test: '/bin/wget --version'
