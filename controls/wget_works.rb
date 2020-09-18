@@ -22,7 +22,7 @@ control 'core-plans-wget-works' do
   hab_pkg_path = command("hab pkg path #{plan_ident}")
   describe hab_pkg_path do
     its('stdout') { should_not be_empty }
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
 
@@ -31,7 +31,7 @@ control 'core-plans-wget-works' do
   wget_works = command("#{File.join(bin_dir, "wget")} --version")
   describe wget_works do
     its('stdout') { should match /GNU Wget #{hab_pkg_path.stdout.strip.split('/')[5]}/ }
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
 
