@@ -1,7 +1,7 @@
 pkg_name=wget
 _distname="$pkg_name"
 pkg_origin=core
-pkg_version=1.21.1
+pkg_version=1.21.2
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="\
 GNU Wget is a free software package for retrieving files using HTTP, HTTPS, \
@@ -10,7 +10,7 @@ FTP and FTPS the most widely-used Internet protocols.\
 pkg_upstream_url="https://www.gnu.org/software/wget/"
 pkg_license=('GPL-3.0+')
 pkg_source="https://ftp.gnu.org/gnu/${_distname}/${_distname}-${pkg_version}.tar.gz"
-pkg_shasum="59ba0bdade9ad135eda581ae4e59a7a9f25e3a4bde6a5419632b31906120e26e"
+pkg_shasum="e6d4c76be82c676dd7e8c61a29b2ac8510ae108a810b5d1d18fc9a1d2c9a2497"
 pkg_deps=(
   core/cacerts
   core/glibc
